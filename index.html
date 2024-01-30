@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web studio Homework</title>
+
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.min.css"
@@ -54,30 +55,87 @@
             </li>
           </ul>
         </address>
-        <div class="ham-menu-div">
-          <svg
-            class="ham-menu-svg js-open-menu"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="22"
-            viewBox="0 0 32 22"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_297053_2156)">
-              <path
-                d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
-                stroke="#2E2F42"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_297053_2156">
-                <rect width="32" height="22" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
+
+        <button
+          class="ham-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="burger-menu js-menu-container" id="mobile-menu">
+        <button class="ham-close-button js-close-menu">
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
+        <nav class="nav-burger-menu">
+          <ul class="ham-menu-list list">
+            <li>
+              <a href="./index.html" class="studio-link link">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="nav-burger-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="" class="nav-burger-link link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="address-container">
+          <address class="burger-menu-address">
+            <ul class="burger-menu-address-list list">
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="burger-menu-address-link-phone"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="burger-menu-address-link-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="footer-list list">
+            <li class="footer-list-item">
+              <a href="" class="footer-item-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="" class="footer-item-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="" class="footer-item-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="" class="footer-item-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -484,7 +542,7 @@
         </div>
 
         <div class="subscribe-footer">
-          <p class="subscribe-text">Subscribe</p>
+          <p class="subscribe-text tablet--size">Subscribe</p>
           <form class="subscribe-form">
             <label class="subscribe-label">
               <input
@@ -585,96 +643,14 @@
         </form>
       </div>
     </div>
-    <!--Burger menu-->
-    <div class="burger-menu-div is-open js-menu-container">
-      <button type="button" class="burger-menu-button js-close-menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="8"
-          height="8"
-          viewBox="0 0 8 8"
-          fill="none"
-        >
-          <g clip-path="url(#clip0_628519_170)">
-            <path
-              d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
-              fill="#2E2F42"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_628519_170">
-              <rect width="8" height="8" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-      </button>
-        <nav class="nav-burger-menu">
-          <ul class="list nav-burger-menu-list">
-            <li class="nav-burger-menu-li">
-              <a href="./index.html" class="link nav-burger-link">Studio</a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="link nav-burger-link"
-                >Portfolio</a
-              >
-            </li>
-            <li><a href="" class="link nav-burger-link">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="burger-menu-address">
-          <ul class="list burger-menu-address-list">
-            <li>
-              <a
-                href="tel:+110001111111"
-                class="link burger-menu-address-link-phone"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="link burger-menu-address-link-mail"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <ul class="footer-list burger-menu-media-list">
-          <li class="footer-list-item">
-            <a href="" class="footer-item-link"
-              ><svg class="footer-icon-svg" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
 
-          <li class="footer-list-item">
-            <a href="" class="footer-item-link"
-              ><svg class="footer-icon-svg" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-list-item">
-            <a href="" class="footer-item-link"
-              ><svg class="footer-icon-svg" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="footer-list-item">
-            <a href="" class="footer-item-link"
-              ><svg class="footer-icon-svg" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <script src="./modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
