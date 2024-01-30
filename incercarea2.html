@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web studio Homework</title>
-
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.min.css"
@@ -48,24 +47,21 @@
         </nav>
 
         <address class="contact">
-          <ul class="list tablet-address">
+          <ul class="list">
             <li>
               <a
                 href="mailto:info@devstudio.com"
-                class="address-description link mail-tablet"
+                class="address-description link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a
-                href="tel:+110001111111"
-                class="address-description link phone-tablet"
+              <a href="tel:+110001111111" class="address-description link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
-
         <button
           class="ham-button js-open-menu"
           aria-expanded="false"
@@ -83,7 +79,7 @@
         <nav class="nav-burger-menu">
           <ul class="ham-menu-list list">
             <li>
-              <a href="./index.html" class="studio-link link">Studio</a>
+              <a href="./index.html" class="nav-burger-link link">Studio</a>
             </li>
             <li>
               <a href="./portfolio.html" class="nav-burger-link link"
@@ -114,7 +110,7 @@
             </ul>
           </address>
 
-          <ul class="footer-list list">
+          <ul class="burger-menu-media-ul list">
             <li class="footer-list-item">
               <a href="" class="footer-item-link"
                 ><svg class="footer-icon-svg" width="24" height="24">
@@ -147,6 +143,7 @@
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </header>
     <main>
@@ -505,7 +502,7 @@
 
     <footer class="footer">
       <div class="footer-container container">
-        <div class="logo-paragraph" id="myLogoDiv">
+        <div class="logo-paragraph">
           <a href="./index.html" class="web-footer link"
             >Web<span class="accent-footer">Studio</span></a
           >
@@ -516,7 +513,7 @@
           </p>
         </div>
         <div class="footer-socials">
-          <p class="footer-paragraph">Social media</p>
+          <p class="footer-paragraph text">Social media</p>
           <ul class="footer-list">
             <li class="footer-list-item">
               <a href="" class="footer-item-link"
@@ -551,16 +548,15 @@
           </ul>
         </div>
 
-        <div class="subscribe-footer" id="mysubscribe">
-          <p class="subscribe-text tablet--size">Subscribe</p>
+        <div class="subscribe-footer">
+          <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-form">
-            <label class="subscribe-label lbl--class">
+            <label class="subscribe-label">
               <input
                 name="email"
                 type="email"
                 placeholder="E-mail"
-                class="subscribe-input input--class"
-                id="myPH"
+                class="subscribe-input"
               />
             </label>
             <button type="submit" class="subscribe-button">
@@ -583,7 +579,7 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form name="contact_form" class="form">
-          <div class="label-container class--div" id="myDiv">
+          <div class="label-container">
             <label class="input-name" for="user-name">Name</label>
             <div class="svg-icon">
               <input
@@ -596,7 +592,7 @@
               </svg>
             </div>
           </div>
-          <div class="label-container class--div" id="myDiv">
+          <div class="label-container">
             <label class="input-name"> Phone </label>
             <div class="svg-icon">
               <input id="phone" type="number" name="phone" class="input" /><svg
@@ -608,7 +604,7 @@
               </svg>
             </div>
           </div>
-          <div class="label-container class--div" id="myDiv">
+          <div class="label-container">
             <label class="input-name" for="email"> Email </label>
             <div class="svg-icon">
               <input id="email" type="email" name="email" class="input" /><svg
@@ -654,8 +650,7 @@
         </form>
       </div>
     </div>
-
-    <script src="./modal.js"></script>
+    <script type="text/javascript" src="./modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script
       defer
