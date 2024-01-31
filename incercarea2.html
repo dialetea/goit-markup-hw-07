@@ -67,19 +67,49 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+<g clip-path="url(#clip0_297068_2681)">
+<path d="M1.34814 20.0431H30.8866M1.34814 10.7354H30.8866M1.34814 1.42773H30.8866" stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_297068_2681">
+<rect width="32" height="22" fill="white"/>
+</clipPath>
+</defs>
+</svg>
         </button>
       </div>
 
-      <div class="burger-menu js-menu-container" id="mobile-menu">
+      <div class="burger-menu js-menu-container is-open" id="mobile-menu">
         <button class="ham-close-button js-close-menu">
-          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        <!-- <svg class="modal-svg" width="24" height="24">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>-->
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_628519_170)">
+            <path
+              d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+              fill="#2E2F42"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_628519_170">
+              <rect width="8" height="8" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
         </button>
 
         <nav class="nav-burger-menu">
           <ul class="ham-menu-list list">
             <li>
-              <a href="./index.html" class="nav-burger-link link">Studio</a>
+              <a href="./index.html" class="studio-burger-link link">Studio</a>
             </li>
             <li>
               <a href="./portfolio.html" class="nav-burger-link link"
@@ -651,7 +681,7 @@
       </div>
     </div>
     <script type="text/javascript" src="./modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./mobile-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
