@@ -9,6 +9,7 @@
       href="node_modules/modern-normalize/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -40,7 +41,7 @@
         </nav>
 
         <address class="contact">
-          <ul class="list">
+          <ul class="list top-line">
             <li>
               <a
                 href="mailto:info@devstudio.com"
@@ -55,18 +56,21 @@
             </li>
           </ul>
         </address>
-        <div class="ham-menu-div">
+        <button
+          class="ham-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg
-            class="ham-menu-svg js-open-menu"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="22"
             viewBox="0 0 32 22"
             fill="none"
           >
-            <g clip-path="url(#clip0_297053_2156)">
+            <g clip-path="url(#clip0_297068_2681)">
               <path
-                d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                d="M1.34814 20.0431H30.8866M1.34814 10.7354H30.8866M1.34814 1.42773H30.8866"
                 stroke="#2E2F42"
                 stroke-width="3"
                 stroke-linecap="round"
@@ -74,11 +78,106 @@
               />
             </g>
             <defs>
-              <clipPath id="clip0_297053_2156">
+              <clipPath id="clip0_297068_2681">
                 <rect width="32" height="22" fill="white" />
               </clipPath>
             </defs>
           </svg>
+        </button>
+      </div>
+
+      <div class="burger-menu js-menu-container" id="mobile-menu">
+        <button class="ham-close-button js-close-menu">
+          <!-- <svg class="modal-svg" width="24" height="24">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_628519_170)">
+              <path
+                d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                fill="#2E2F42"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_628519_170">
+                <rect width="8" height="8" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+
+        <nav class="nav-burger-menu">
+          <ul class="ham-menu-list list">
+            <li>
+              <a href="./index.html" class="studio-burger-link link">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="nav-burger-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="" class="nav-burger-link link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="address-container">
+          <address class="burger-menu-address">
+            <ul class="burger-menu-address-list list">
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="burger-menu-address-link-phone"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="burger-menu-address-link-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="burger-menu-media-ul list">
+            <li class="footer-list-item">
+              <a href="" class="footer-item-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="" class="footer-item-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="" class="footer-item-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-list-item">
+              <a href="" class="footer-item-link"
+                ><svg class="footer-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -86,7 +185,7 @@
       <section class="section-portfolio">
         <div class="portfolio-cards container">
           <h1 class="visually-hidden">text</h1>
-          <ul class="portfolio-cards-list list">
+          <ul class="list portfolio-cards-list">
             <li><button type="button" class="button-portfolio">All</button></li>
             <li>
               <button type="button" class="button-portfolio">Web Site</button>
@@ -315,7 +414,7 @@
         </div>
 
         <div class="footer-socials">
-          <p class="footer-paragraph">Social media</p>
+          <p class="footer-paragraph text">Social media</p>
           <ul class="footer-list">
             <li class="footer-list-item">
               <a href="" class="footer-item-link"
@@ -364,6 +463,7 @@
           </form>
         </div>
       </div>
+      <script src="./mobile-menu.js"></script>
     </footer>
   </body>
 </html>
